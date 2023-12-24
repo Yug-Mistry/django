@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Customers</title>
+    </head>
+    <body>
+        <h1>Customers</h1>
+        <table border=2 cellpadding=5>
+            <tr>
+                <th>name</th>
+                <th>ac_no</th>
+                <th>email</th>
+                <th>phone no</th>
+                <th>age</th>
+            </tr>
+            {% for customer in customers %}
+            <tr>
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.ac_no }}</td>
+                <td>{{ customer.mailid }}</td>
+                <td>{{ customer.phone_number }}</td>
+                <td>{{ customer.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
+    
